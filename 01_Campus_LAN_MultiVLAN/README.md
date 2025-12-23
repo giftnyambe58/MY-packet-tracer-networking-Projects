@@ -33,7 +33,7 @@ connectivity across all building verified
 
 **DOCUMENTATION**
 view full  project documentation
-CAMPUS LAN DESIGN WITH FULL DOCUMENTATAION.pdf
+./CAMPUS LAN DESIGN WITH FULL DOCUMENTATAION.pdf
 
 
 
