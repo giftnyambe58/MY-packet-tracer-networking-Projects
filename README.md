@@ -9,6 +9,7 @@ This repository showcases practical Cisco Packet Tracer projects demonstrating h
 - VoIP & IP Phones
 - Network troubleshooting and verification
 - Basic network security concepts
+- NAT
 
 ## Projects
 1. **Campus LAN (Multi-VLAN / Inter-VLAN Routing)**  
