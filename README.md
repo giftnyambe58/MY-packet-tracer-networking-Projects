@@ -1,3 +1,4 @@
+PROJECT-01
 # Packet Tracer Network Portfolio
 
 This repository showcases practical Cisco Packet Tracer projects demonstrating hands-on networking skills aligned with CCNA-level knowledge. It includes campus LAN design with multiple VLANs and inter-VLAN routing, as well as VoIP/IP phone deployment across multiple buildings.
