@@ -12,10 +12,9 @@ This repository showcases practical Cisco Packet Tracer projects demonstrating h
 
 ## Projects
 1. **Campus LAN (Multi-VLAN / Inter-VLAN Routing)**  
-   - Full documentation and lab files in [01_Campus_LAN_MultiVLAN](./01_Campus_LAN_MultiVLAN)
-
+   - Full documentation and lab files in
 2. **IP Phones Network (VoIP / Voice VLANs)**  
-   - Full documentation and lab files in [02_IP_Phones_Network](./02_IP_Phones_Network)
+   - Full documentation and lab files 
 
 ## How to Use
 - Open `.pkt` files in Cisco Packet Tracer (v8 recommended)
