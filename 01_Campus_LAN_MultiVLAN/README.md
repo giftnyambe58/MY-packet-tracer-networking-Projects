@@ -25,6 +25,8 @@ Medicine vlan 120
 VLAN and trunking(802.1Q)
 Inter-VLAN routing
 DHCP
+ACLs
+OSPF
 
 **VERIFICATION**
 PCs can communicate with those in different VLAN
