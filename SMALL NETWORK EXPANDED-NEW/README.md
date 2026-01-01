@@ -18,6 +18,7 @@
 - NAT (Static)
 - OSPF
 - Static Route
+  
 **DOCUMETATION**
 view full documentation using the link below
 https://github.com/giftnyambe58/MY-packet-tracer-networking-Projects/blob/main/SMALL%20NETWORK%20EXPANDED-NEW/SMALL%20NETWORK%20DESIGN%20%20EXPANDED-New.pdf
