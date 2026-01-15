@@ -1,0 +1,95 @@
+Small Network Expanded – SSH
+ Project Overview
+This project demonstrates the implementation of secure remote management of network devices using SSH in a small enterprise network.
+The objective was to ensure that only the ICT Manager (Admin PC) can securely access all network devices (switches, multilayer switch, and edge router) from a remote location.
+The lab was designed and implemented using Cisco Packet Tracer, following CCNA best practices.
+Objectives
+Replace insecure Telnet with SSH
+Configure a dedicated management VLAN
+Restrict SSH access to a single authorized Admin PC
+Apply ACLs to control remote access
+Troubleshoot Layer 2, Layer 3, and OSPF issues
+Validate end-to-end secure connectivity
+Technologies & Concepts Used
+Cisco IOS
+SSH (Version 2)
+VLANs & Management VLAN
+Switch Virtual Interfaces (SVI)
+Standard Access Control Lists (ACL)
+OSPF Routing Protocol
+Static IP Addressing
+Network Troubleshooting
+Network Topology
+The network consists of:
+Access Switches (HR, ICT, Sales, Server Room)
+One Multilayer Switch (MLS)
+One Edge Router
+One Admin PC (ICT Manager)
+Device hostnames were enabled for easier identification and management.
+SECURE ACCESS DESIGN
+Only the Admin PC is permitted to manage the network devices.
+ADMIN PC CONFIGURATION
+IP Address: 192.168.0.70/28
+Default Gateway: 192.168.0.65
+DNS Server: 8.8.8.8
+KEY CONFIGURATIONS
+1 SSH CONFIGURATION (ALL DEVICES)
+hostname <DEVICE_NAME>
+ip domain-name gtech.local
+username Admin privilege 15 secret Admin123
+crypto key generate rsa
+ip ssh version 2
+SSH ACL CONFIGS
+ip access-list standard SSH-MGT
+ permit host 192.168.0.70
+ deny any
+
+line vty 0 15
+ login local
+ transport input ssh
+ access-class SSH-MGT in
+
+MANAGEMENT VLAN
+VLAN ID 99
+VLAN name MGT
+Subnet 192.168.0.64/28
+
+MULTILAYER SWITCH(MLS) -MANAGEMENT SVI
+interface vlan 99
+ ip address 192.168.0.65 255.255.255.240
+ no shutdown
+
+ACCESS SWITCH MANAGEMENT CONFIGS
+interface vlan 99
+ ip address 192.168.0.66 255.255.255.240(192.168.0.67,192.168.0.68 and 192.168.0.69 )
+ no shutdown
+ip default-gateway 192.168.0.65
+TESTING AND VERIFICATION
+ssh -l admin 192.168.0.66   # HR Switch
+ssh -l admin 192.168.0.67   # ICT Switch
+ssh -l admin 192.168.0.68   # Sales Switch
+ssh -l admin 192.168.0.69   # Server Room Switch
+ssh -l admin 10.0.0.1       # MLS
+ssh -l admin 10.0.0.2       # Edge Router
+TROUBLESHOOTING SUMMARY
+SSH failure on HR SW
+- Cause: Incorrect VLAN assignment and conflicting ACL entries
+- Fix: Removed unused VLAN and recreated the SSH ACL to permit only Admin PC
+Unable to reach edge router
+- Cause Management subnet 192.168.0.64/28 was no advertised in OSPF 
+- Fix: Advertised the subnet under OSPF on the MLS
+router ospf 1
+ network 192.168.0.64 0.0.0.15 area 0
+
+FINAL OUTCOME
+Secure SSH access successfully configured on :
+- All Access Switches
+- Multilayer Switch
+- Edge Router
+Management Access restricted to one authorized host
+Network fully reachable and securely manageable
+SKILLS DEMONSTRATED
+Secure device management using SSH
+VLAN and SVI configuration
+ACL implementation and troubleshooting
+OSPF routing and subnet advertisement
