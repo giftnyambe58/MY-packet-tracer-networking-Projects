@@ -35,4 +35,4 @@ All PCs correctly receive IP addresses via DHCP.
 Connectivity across all three buildings has been verified.
 Documentation
 Full project documentation is available here:
-CAMPUS LAN DESIGN WITH FULL DOCUMENTATION⁠�
+https://github.com/giftnyambe58/MY-packet-tracer-networking-Projects/blob/main/01_Campus_LAN_MultiVLAN/CAMPUS%20LAN%20DESIGN%20WITH%20FULL%20DOCUMENTATAION.pdf
