@@ -1,52 +1,50 @@
-**Campus LAN with Multi-VLANS and inter-VLAN routing**
-**OBJECTIVE**
-Design and configure a campus LAN across 3 buildings as COMPUTER BLOCK, ADMINISTRATION BLOCK AND HEALTH BLOCK enable communication between them using inter-VLAN routing
-
-**NETWORK OVERVIEW**
-BUILDING -1-COMPUTER BLOCK
-Computer engineering vlan 10
-Computer-lab-1 vlan 20
-Computer-lab-2 vlan 30
-Computer-server-room vlan 40
-
-BUILDING -2- ADMINISTRATION BLOCK
-Vice chancellor vlan 50 
-Admission vlan 60
-Open Distance Learning (ODL)-2 vlan 70
-Administration-server-room vlan 80
-
-BUILDING -3- HEALTH BLOCK
-Nursing vlan 90 
-Environmental vlan 100
-Health-server-room-2 vlan 110
-Medicine vlan 120
-
-**TECHNOLOGY USED**
-VLAN and trunking(802.1Q)
-Inter-VLAN routing
+Campus LAN with Multi-VLANs and Inter-VLAN Routing
+Objective
+Design and configure a campus LAN across three buildings—Computer Block, Administration Block, and Health Block—and enable communication between them using inter-VLAN routing.
+Network Overview
+Building 1 – Computer Block
+VLAN ID
+Department / Area
+10
+Computer Engineering
+20
+Computer Lab 1
+30
+Computer Lab 2
+40
+Computer Server Room
+Building 2 – Administration Block
+VLAN ID
+Department / Area
+50
+Vice Chancellor
+60
+Admission
+70
+Open Distance Learning (ODL-2)
+80
+Administration Server Room
+Building 3 – Health Block
+VLAN ID
+Department / Area
+90
+Nursing
+100
+Environmental
+110
+Health Server Room 2
+120
+Medicine
+Technologies Used
+VLANs and Trunking (802.1Q)
+Inter-VLAN Routing
 DHCP
-ACLs
-OSPF
-
-**VERIFICATION**
-PCs can communicate with those in different VLAN
-All PC received ip address correctly
-connectivity across all building verified
-
-**DOCUMENTATION**
-view full  project documentation
-https://github.com/giftnyambe58/packet-tracer-network-portfolio/blob/main/01_Campus_LAN_MultiVLAN/CAMPUS%20LAN%20DESIGN%20WITH%20FULL%20DOCUMENTATAION.pdf
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ACLs (Access Control Lists)
+OSPF (Open Shortest Path First)
+Verification
+PCs can communicate across different VLANs.
+All PCs correctly receive IP addresses via DHCP.
+Connectivity across all three buildings has been verified.
+Documentation
+Full project documentation is available here:
+CAMPUS LAN DESIGN WITH FULL DOCUMENTATION⁠�
