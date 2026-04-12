@@ -1,20 +1,92 @@
-# GTECH University Network Design
+# 🎓 GTECH University Campus Network
 
-## Overview
-Multi-building campus network built using Cisco Packet Tracer.
+![Cisco](https://img.shields.io/badge/Tool-Cisco%20Packet%20Tracer-blue)
+![Network](https://img.shields.io/badge/Type-Campus%20Network-green)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
-## Features
-- VLANs
-- Inter-VLAN Routing
-- OSPF
-- DHCP
-- NAT
+---
 
-## Files
-- .pkt topology
+## 📌 Project Overview
+This project is a **multi-building campus network** designed and implemented using Cisco Packet Tracer.
+
+It connects four main buildings within GTECH University:
+- 🏢 Business Block  
+- 🏢 Administration Block  
+- 🏢 Technology Block  
+- 🏢 Health Block  
+
+The network is designed to be **scalable, secure, and efficient**, supporting communication across departments and internet connectivity.
+
+---
+
+## 🎯 Objectives
+- Design a hierarchical network (Core, Distribution, Access)
+- Implement VLAN-based segmentation
+- Enable inter-VLAN communication using SVIs
+- Configure dynamic routing using OSPF
+- Provide automatic IP addressing (DHCP)
+- Implement NAT (PAT + Static NAT)
+- Perform real-world troubleshooting
+
+---
+
+## ⚙️ Technologies Used
+- VLANs  
+- Inter-VLAN Routing (SVIs)  
+- OSPF Routing Protocol  
+- DHCP  
+- NAT (PAT & Static NAT)  
+- Cisco Packet Tracer  
+
+---
+
+## 🏗 Network Design
+- Multi-layer architecture (Access → Distribution → Core)
+- Multiple routers and multilayer switches
+- Department-based VLAN segmentation
+- Server deployment in each building
+- Full inter-building connectivity
+
+---
+
+## 🧪 Testing & Verification
+✔️ VLAN communication verified  
+✔️ Inter-VLAN routing successful  
+✔️ OSPF routing operational  
+✔️ DHCP allocation working  
+✔️ NAT translation tested  
+✔️ End-to-end connectivity achieved  
+
+---
+
+## 🛠 Troubleshooting Highlights
+- Fixed VLAN misconfigurations (Layer 2 issues)  
+- Corrected SVI IP addressing (Layer 3 issues)  
+- Resolved DHCP pool errors  
+- Fixed incorrect default gateways  
+- Identified and corrected routing issues  
+
+---
+
+## 📂 Project Files
+- 📁 `gtech-topology.pkt` – Network topology  
+- 📄 `gtech-documentation.docx` – Full documentation  
+
+---
+
+## 📷 Screenshots
+*(To be added – topology & ping results)*
+
+---
+
+## 👨‍💻 Author
+**Gift Nyambe**
+
+---
+
+## ⭐ Notes
+This project demonstrates practical skills in:
+- Network design  
+- Configuration  
+- Troubleshooting  
 - Documentation
-## Screenshot 
-- To be uploaded soon
-
-## Author
-Gift Nyambe 
